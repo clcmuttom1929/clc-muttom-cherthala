@@ -40,17 +40,55 @@
 
   </div>
 </header>
+  </header>
 
 </header>
 
-<!-- TOP SCROLLING QUIZ ANNOUNCEMENT -->
-<div class="quiz-top-bar" aria-label="33rd Kerala Quiz announcement">
+<!-- CLICKABLE SCROLLING 33rd KERALA QUIZ ANNOUNCEMENT -->
 
-  <div class="quiz-scroll-track">
+<div
+  style="
+    width:100%;
+    overflow:hidden;
+    background:#0b2d5c;
+    border-bottom:3px solid #d4af37;
+    box-sizing:border-box;
+    cursor:pointer;
+  "
+>
 
-    <a href="#events" class="quiz-scroll-item">
+  <div
+    style="
+      display:flex;
+      width:max-content;
+      white-space:nowrap;
+      animation:clcQuizScroll 12s linear infinite;
+    "
+  >
 
-      <span class="coming-soon">
+    <!-- COPY 1 -->
+    <a
+      href="#events"
+      style="
+        display:block;
+        color:white;
+        text-decoration:none;
+        padding:12px 70px 12px 0;
+        font-family:Arial,sans-serif;
+        font-size:16px;
+        font-weight:700;
+        letter-spacing:0.8px;
+      "
+    >
+
+      <span
+        style="
+          color:#FFD700;
+          font-weight:900;
+          display:inline-block;
+          animation:clcPulse 1.2s ease-in-out infinite;
+        "
+      >
         🔔 COMING SOON
       </span>
 
@@ -67,9 +105,29 @@
     </a>
 
 
-    <a href="#events" class="quiz-scroll-item">
+    <!-- COPY 2 -->
+    <a
+      href="#events"
+      style="
+        display:block;
+        color:white;
+        text-decoration:none;
+        padding:12px 70px 12px 0;
+        font-family:Arial,sans-serif;
+        font-size:16px;
+        font-weight:700;
+        letter-spacing:0.8px;
+      "
+    >
 
-      <span class="coming-soon">
+      <span
+        style="
+          color:#FFD700;
+          font-weight:900;
+          display:inline-block;
+          animation:clcPulse 1.2s ease-in-out infinite;
+        "
+      >
         🔔 COMING SOON
       </span>
 
@@ -90,190 +148,47 @@
 </div>
 
 
+<!-- INLINE ANIMATION -->
 <style>
 
-/* =========================================
-   TOP QUIZ ANNOUNCEMENT
-   ========================================= */
+@keyframes clcQuizScroll {
 
-.quiz-top-bar {
+  from {
+    transform:translateX(0);
+  }
 
-  width:100%;
-
-  overflow:hidden;
-
-  background:
-    linear-gradient(
-      90deg,
-      #071d3b,
-      #0b2d5c,
-      #174f8f,
-      #0b2d5c,
-      #071d3b
-    );
-
-  color:white;
-
-  border-bottom:3px solid #d4af37;
-
-  box-sizing:border-box;
-
-  cursor:pointer;
+  to {
+    transform:translateX(-50%);
+  }
 
 }
 
 
-/* SCROLLING TRACK */
-
-.quiz-scroll-track {
-
-  display:flex;
-
-  width:max-content;
-
-  white-space:nowrap;
-
-  animation:quizScroll 18s linear infinite;
-
-}
-
-
-/* CLICKABLE TEXT */
-
-.quiz-scroll-item {
-
-  display:block;
-
-  color:white;
-
-  text-decoration:none;
-
-  padding:12px 80px 12px 0;
-
-  font-size:16px;
-
-  font-weight:700;
-
-  letter-spacing:0.8px;
-
-  transition:color 0.3s ease;
-
-}
-
-
-/* HOVER EFFECT */
-
-.quiz-scroll-item:hover {
-
-  color:#ffe58a;
-
-}
-
-
-/* GOLD COMING SOON */
-
-.coming-soon {
-
-  color:#ffd700;
-
-  font-weight:900;
-
-  text-shadow:
-    0 0 5px rgba(255,215,0,0.5),
-    0 0 12px rgba(255,215,0,0.3);
-
-  animation:comingSoonPulse 1.5s ease-in-out infinite;
-
-}
-
-
-/* COMING SOON PULSE */
-
-@keyframes comingSoonPulse {
+@keyframes clcPulse {
 
   0% {
-
     opacity:1;
-
     transform:scale(1);
-
   }
 
   50% {
-
-    opacity:0.55;
-
-    transform:scale(1.04);
-
+    opacity:0.45;
+    transform:scale(1.05);
   }
 
   100% {
-
     opacity:1;
-
     transform:scale(1);
-
-  }
-
-}
-
-
-/* SCROLLING ANIMATION */
-
-@keyframes quizScroll {
-
-  0% {
-
-    transform:translateX(0);
-
-  }
-
-  100% {
-
-    transform:translateX(-50%);
-
   }
 
 }
 
 
 /* MOBILE */
-
 @media (max-width:600px) {
 
-  .quiz-scroll-item {
-
-    font-size:14px;
-
-    padding:10px 60px 10px 0;
-
-    letter-spacing:0.5px;
-
-  }
-
-  .quiz-scroll-track {
-
-    animation-duration:14s;
-
-  }
-
-}
-
-
-/* ACCESSIBILITY */
-
-@media (prefers-reduced-motion:reduce) {
-
-  .quiz-scroll-track {
-
-    animation:none;
-
-  }
-
-  .coming-soon {
-
-    animation:none;
-
+  div[style*="animation:clcQuizScroll"] {
+    animation-duration:9s !important;
   }
 
 }
