@@ -45,102 +45,240 @@
 
 <!-- TOP SCROLLING QUIZ ANNOUNCEMENT -->
 <div class="quiz-top-bar" aria-label="33rd Kerala Quiz announcement">
+
   <div class="quiz-scroll-track">
 
     <a href="#events" class="quiz-scroll-item">
-      🔔 <strong>COMING SOON</strong>
+
+      <span class="coming-soon">
+        🔔 COMING SOON
+      </span>
+
       &nbsp; • &nbsp;
+
       <strong>33rd ALL KERALA KERALA QUIZ 2026</strong>
+
       &nbsp; • &nbsp;
+
       CLC MUTTOM CHERTHALA
+
       &nbsp; • &nbsp;
+
     </a>
 
+
     <a href="#events" class="quiz-scroll-item">
-      🔔 <strong>COMING SOON</strong>
+
+      <span class="coming-soon">
+        🔔 COMING SOON
+      </span>
+
       &nbsp; • &nbsp;
+
       <strong>33rd ALL KERALA KERALA QUIZ 2026</strong>
+
       &nbsp; • &nbsp;
+
       CLC MUTTOM CHERTHALA
+
       &nbsp; • &nbsp;
+
     </a>
 
   </div>
+
 </div>
 
+
 <style>
-/* TOP QUIZ ANNOUNCEMENT */
+
+/* =========================================
+   TOP QUIZ ANNOUNCEMENT
+   ========================================= */
+
 .quiz-top-bar {
-  width: 100%;
-  overflow: hidden;
-  background: linear-gradient(
-    90deg,
-    #0b2d5c,
-    #174f8f,
-    #0b2d5c
-  );
-  color: white;
-  border-bottom: 3px solid #d4af37;
-  box-sizing: border-box;
-  cursor: pointer;
+
+  width:100%;
+
+  overflow:hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      #071d3b,
+      #0b2d5c,
+      #174f8f,
+      #0b2d5c,
+      #071d3b
+    );
+
+  color:white;
+
+  border-bottom:3px solid #d4af37;
+
+  box-sizing:border-box;
+
+  cursor:pointer;
+
 }
 
-/* Scrolling content */
+
+/* SCROLLING TRACK */
+
 .quiz-scroll-track {
-  display: flex;
-  width: max-content;
-  white-space: nowrap;
-  animation: quizScroll 18s linear infinite;
+
+  display:flex;
+
+  width:max-content;
+
+  white-space:nowrap;
+
+  animation:quizScroll 18s linear infinite;
+
 }
 
-/* Clickable announcement */
+
+/* CLICKABLE TEXT */
+
 .quiz-scroll-item {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 12px 80px 12px 0;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  transition: 0.2s ease;
+
+  display:block;
+
+  color:white;
+
+  text-decoration:none;
+
+  padding:12px 80px 12px 0;
+
+  font-size:16px;
+
+  font-weight:700;
+
+  letter-spacing:0.8px;
+
+  transition:color 0.3s ease;
+
 }
+
+
+/* HOVER EFFECT */
 
 .quiz-scroll-item:hover {
-  color: #ffe58a;
+
+  color:#ffe58a;
+
 }
 
-/* Scrolling animation */
-@keyframes quizScroll {
+
+/* GOLD COMING SOON */
+
+.coming-soon {
+
+  color:#ffd700;
+
+  font-weight:900;
+
+  text-shadow:
+    0 0 5px rgba(255,215,0,0.5),
+    0 0 12px rgba(255,215,0,0.3);
+
+  animation:comingSoonPulse 1.5s ease-in-out infinite;
+
+}
+
+
+/* COMING SOON PULSE */
+
+@keyframes comingSoonPulse {
+
   0% {
-    transform: translateX(0);
+
+    opacity:1;
+
+    transform:scale(1);
+
+  }
+
+  50% {
+
+    opacity:0.55;
+
+    transform:scale(1.04);
+
   }
 
   100% {
-    transform: translateX(-50%);
+
+    opacity:1;
+
+    transform:scale(1);
+
   }
+
 }
 
-/* Mobile */
-@media (max-width: 600px) {
+
+/* SCROLLING ANIMATION */
+
+@keyframes quizScroll {
+
+  0% {
+
+    transform:translateX(0);
+
+  }
+
+  100% {
+
+    transform:translateX(-50%);
+
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width:600px) {
+
   .quiz-scroll-item {
-    font-size: 14px;
-    padding: 10px 60px 10px 0;
-    letter-spacing: 0.5px;
+
+    font-size:14px;
+
+    padding:10px 60px 10px 0;
+
+    letter-spacing:0.5px;
+
   }
 
   .quiz-scroll-track {
-    animation-duration: 14s;
+
+    animation-duration:14s;
+
   }
+
 }
 
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion:reduce) {
+
   .quiz-scroll-track {
-    animation: none;
+
+    animation:none;
+
   }
+
+  .coming-soon {
+
+    animation:none;
+
+  }
+
 }
+
 </style>
-
 <main>
 
 
