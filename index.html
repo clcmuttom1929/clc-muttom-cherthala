@@ -222,6 +222,219 @@
   </div>
 </section>
 
+  <!-- STATISTICS RIBBON -->
+<section style="
+    position:relative;
+    width:100%;
+    min-height:180px;
+    background:#064b8d;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:180px;
+    padding:35px 8%;
+    box-sizing:border-box;
+    overflow:hidden;
+    border-bottom:4px solid #d4af37;
+">
+
+    <!-- Decorative curved ribbon -->
+    <div style="
+        position:absolute;
+        left:-70px;
+        top:-55px;
+        width:120px;
+        height:280px;
+        border:30px solid rgba(212,174,70,0.16);
+        border-radius:50%;
+        pointer-events:none;
+    "></div>
+
+    <!-- Decorative curve right -->
+    <div style="
+        position:absolute;
+        right:-70px;
+        bottom:-80px;
+        width:140px;
+        height:280px;
+        border:30px solid rgba(255,255,255,0.06);
+        border-radius:50%;
+        pointer-events:none;
+    "></div>
+
+
+    <!-- PEOPLE ENROLLED -->
+    <div style="
+        position:relative;
+        z-index:2;
+        text-align:center;
+        min-width:240px;
+    ">
+
+        <div style="
+            font-family:Georgia,'Times New Roman',serif;
+            font-size:54px;
+            line-height:1;
+            font-weight:700;
+            color:#d6ae4b;
+            margin-bottom:10px;
+        ">
+            <span class="clc-counter" data-target="1500">0</span><span style="font-size:30px;">+</span>
+        </div>
+
+        <div style="
+            font-family:Arial,Helvetica,sans-serif;
+            font-size:14px;
+            font-weight:800;
+            letter-spacing:1px;
+            color:#ffffff;
+            white-space:nowrap;
+        ">
+            PEOPLE ENROLLED
+        </div>
+
+    </div>
+
+
+    <!-- YEARS OF EXCELLENCE -->
+    <div style="
+        position:relative;
+        z-index:2;
+        text-align:center;
+        min-width:240px;
+    ">
+
+        <div style="
+            font-family:Georgia,'Times New Roman',serif;
+            font-size:54px;
+            line-height:1;
+            font-weight:700;
+            color:#d6ae4b;
+            margin-bottom:10px;
+        ">
+            <span class="clc-counter" data-target="97">0</span><span style="font-size:30px;">+</span>
+        </div>
+
+        <div style="
+            font-family:Arial,Helvetica,sans-serif;
+            font-size:14px;
+            font-weight:800;
+            letter-spacing:1px;
+            color:#ffffff;
+            white-space:nowrap;
+        ">
+            YEARS OF EXCELLENCE
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COUNTER ANIMATION -->
+<script>
+
+(function () {
+
+    const counters = document.querySelectorAll(".clc-counter");
+    let counterStarted = false;
+
+    function startCLCcounter() {
+
+        if (counterStarted) return;
+        counterStarted = true;
+
+        counters.forEach(function(counter) {
+
+            const target = parseInt(counter.getAttribute("data-target"));
+            const duration = 2200;
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+
+                /* Smooth ease-out */
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+
+                const value = Math.floor(easeOut * target);
+
+                counter.textContent = value.toLocaleString();
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target.toLocaleString();
+                }
+            }
+
+            requestAnimationFrame(updateCounter);
+
+        });
+    }
+
+
+    /* Start animation when ribbon enters the screen */
+    const ribbon = document.querySelector(".clc-counter");
+
+    if (ribbon) {
+
+        const statsSection = ribbon.closest("section");
+
+        const observer = new IntersectionObserver(function(entries) {
+
+            if (entries[0].isIntersecting) {
+
+                startCLCcounter();
+
+                observer.disconnect();
+            }
+
+        }, {
+            threshold:0.25
+        });
+
+        observer.observe(statsSection);
+    }
+
+})();
+
+</script>
+
+
+<!-- MOBILE RESPONSIVE -->
+<style>
+
+@media (max-width:600px) {
+
+    /* Statistics ribbon */
+    .clc-counter {
+        font-size:42px !important;
+    }
+
+    .clc-counter + span {
+        font-size:25px !important;
+    }
+
+    section:has(.clc-counter) {
+        gap:35px !important;
+        padding:35px 15px !important;
+    }
+
+    section:has(.clc-counter) > div {
+        min-width:140px !important;
+    }
+
+    section:has(.clc-counter) > div > div:last-child {
+        font-size:10px !important;
+        letter-spacing:.5px !important;
+        white-space:normal !important;
+    }
+
+}
+
+</style>
 
 <!-- ABOUT -->
 <section id="about" class="section">
