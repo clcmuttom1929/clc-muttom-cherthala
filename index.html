@@ -44,114 +44,141 @@
 
 </header>
 
-<!-- CLICKABLE SCROLLING 33rd KERALA QUIZ ANNOUNCEMENT -->
+<!-- ANNOUNCEMENT + SCROLLING PANEL -->
 
 <div
   style="
+    display:flex;
     width:100%;
-    overflow:hidden;
-    background:#0b2d5c;
+    height:46px;
+    background:#071d3b;
     border-bottom:3px solid #d4af37;
+    overflow:hidden;
     box-sizing:border-box;
-    cursor:pointer;
   "
 >
 
+  <!-- FIXED ANNOUNCEMENT LABEL -->
+
   <div
     style="
+      flex:0 0 auto;
       display:flex;
-      width:max-content;
+      align-items:center;
+      justify-content:center;
+      padding:0 18px;
+      background:#d4af37;
+      color:#071d3b;
+      font-family:Arial,sans-serif;
+      font-size:14px;
+      font-weight:900;
+      letter-spacing:1px;
       white-space:nowrap;
-      animation:clcQuizScroll 12s linear infinite;
+      z-index:10;
+    "
+  >
+    📢 ANNOUNCEMENT
+  </div>
+
+
+  <!-- SCROLLING AREA -->
+
+  <div
+    style="
+      flex:1;
+      overflow:hidden;
+      position:relative;
+      display:flex;
+      align-items:center;
     "
   >
 
-    <!-- COPY 1 -->
-    <a
-      href="#events"
+    <div
       style="
-        display:block;
-        color:white;
-        text-decoration:none;
-        padding:12px 70px 12px 0;
-        font-family:Arial,sans-serif;
-        font-size:16px;
-        font-weight:700;
-        letter-spacing:0.8px;
+        display:flex;
+        width:max-content;
+        white-space:nowrap;
+        animation:clcAnnouncementScroll 15s linear infinite;
       "
     >
 
-      <span
+      <!-- FIRST TEXT -->
+
+      <a
+        href="#events"
         style="
-          color:#FFD700;
-          font-weight:900;
-          display:inline-block;
-          animation:clcPulse 1.2s ease-in-out infinite;
+          color:white;
+          text-decoration:none;
+          font-family:Arial,sans-serif;
+          font-size:15px;
+          font-weight:700;
+          padding-right:100px;
         "
       >
-        🔔 COMING SOON
-      </span>
 
-      &nbsp; • &nbsp;
+        <span
+          style="
+            color:#FFD700;
+            font-weight:900;
+          "
+        >
+          🔔 COMING SOON
+        </span>
 
-      <strong>33rd ALL KERALA KERALA QUIZ 2026</strong>
+        &nbsp; • &nbsp;
 
-      &nbsp; • &nbsp;
+        33rd ALL KERALA KERALA QUIZ 2026
 
-      CLC MUTTOM CHERTHALA
+        &nbsp; • &nbsp;
 
-      &nbsp; • &nbsp;
+        CLC MUTTOM CHERTHALA
 
-    </a>
+      </a>
 
 
-    <!-- COPY 2 -->
-    <a
-      href="#events"
-      style="
-        display:block;
-        color:white;
-        text-decoration:none;
-        padding:12px 70px 12px 0;
-        font-family:Arial,sans-serif;
-        font-size:16px;
-        font-weight:700;
-        letter-spacing:0.8px;
-      "
-    >
+      <!-- SECOND COPY -->
 
-      <span
+      <a
+        href="#events"
         style="
-          color:#FFD700;
-          font-weight:900;
-          display:inline-block;
-          animation:clcPulse 1.2s ease-in-out infinite;
+          color:white;
+          text-decoration:none;
+          font-family:Arial,sans-serif;
+          font-size:15px;
+          font-weight:700;
+          padding-right:100px;
         "
       >
-        🔔 COMING SOON
-      </span>
 
-      &nbsp; • &nbsp;
+        <span
+          style="
+            color:#FFD700;
+            font-weight:900;
+          "
+        >
+          🔔 COMING SOON
+        </span>
 
-      <strong>33rd ALL KERALA KERALA QUIZ 2026</strong>
+        &nbsp; • &nbsp;
 
-      &nbsp; • &nbsp;
+        33rd ALL KERALA KERALA QUIZ 2026
 
-      CLC MUTTOM CHERTHALA
+        &nbsp; • &nbsp;
 
-      &nbsp; • &nbsp;
+        CLC MUTTOM CHERTHALA
 
-    </a>
+      </a>
+
+    </div>
 
   </div>
 
 </div>
 
 
-<!-- INLINE ANIMATION -->
 <style>
 
-@keyframes clcQuizScroll {
+@keyframes clcAnnouncementScroll {
 
   from {
     transform:translateX(0);
@@ -164,31 +191,17 @@
 }
 
 
-@keyframes clcPulse {
-
-  0% {
-    opacity:1;
-    transform:scale(1);
-  }
-
-  50% {
-    opacity:0.45;
-    transform:scale(1.05);
-  }
-
-  100% {
-    opacity:1;
-    transform:scale(1);
-  }
-
-}
-
-
 /* MOBILE */
+
 @media (max-width:600px) {
 
-  div[style*="animation:clcQuizScroll"] {
-    animation-duration:9s !important;
+  /* Smaller announcement label */
+
+  div[style*="ANNOUNCEMENT"] {
+
+    padding:0 10px !important;
+    font-size:11px !important;
+
   }
 
 }
