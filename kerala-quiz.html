@@ -1,231 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="33rd All Kerala Kerala Quiz 2026 — event details, rounds, prizes, venue and registration information by CLC Muttom Cherthala.">
+<title>33rd All Kerala Kerala Quiz 2026 | CLC Muttom Cherthala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <title>33rd All Kerala Kerala Quiz 2026 | CLC Muttom Cherthala</title>
+<style>
+:root{
+  --navy:#071d3b;
+  --blue:#0b4d8d;
+  --blue2:#123e70;
+  --gold:#d4af37;
+  --gold2:#f4d66d;
+  --cream:#f7f4eb;
+  --white:#fff;
+  --ink:#172333;
+  --muted:#657182;
+  --line:#e4e8ee;
+  --shadow:0 18px 55px rgba(7,29,59,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:#f5f7fa;font-family:Manrope,Arial,sans-serif;line-height:1.7}
+a{text-decoration:none}
+.container{width:min(1160px,92%);margin:auto}
 
-  <meta
-    name="description"
-    content="33rd All Kerala Kerala Quiz 2026 organized by CLC Muttom Cherthala. View the quiz poster and register online."
-  >
+.topbar{
+  background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.12);
+}
+.topbar-inner{
+  min-height:38px;display:flex;justify-content:space-between;align-items:center;
+  font-size:12px;letter-spacing:.3px
+}
+.header{
+  position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)
+}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--navy)}
+.brand img{width:52px;height:52px;object-fit:contain}
+.brand strong{display:block;font-size:15px;letter-spacing:.8px}
+.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:2px}
+nav{display:flex;gap:22px;align-items:center}
+nav a{font-size:13px;font-weight:800;color:#344152}
+nav a:hover{color:var(--blue)}
+.nav-register{padding:10px 17px;border-radius:30px;background:var(--gold);color:var(--navy)!important}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+.hero{
+  position:relative;overflow:hidden;background:
+  radial-gradient(circle at 85% 20%,rgba(244,214,109,.22),transparent 28%),
+  linear-gradient(125deg,#061b37,#0b4d8d 60%,#092a50);
+  color:#fff;padding:85px 0 75px
+}
+.hero:before,.hero:after{
+  content:"";position:absolute;border:1px solid rgba(255,255,255,.12);
+  border-radius:50%;pointer-events:none
+}
+.hero:before{width:520px;height:520px;right:-190px;top:-260px}
+.hero:after{width:360px;height:360px;left:-210px;bottom:-240px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center;position:relative;z-index:2}
+.kicker{color:var(--gold2);font-size:13px;font-weight:900;letter-spacing:2.5px;text-transform:uppercase}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(40px,6vw,72px);line-height:1.03;margin:14px 0 18px}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p{font-size:17px;max-width:700px;color:rgba(255,255,255,.84)}
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
+.pill{padding:9px 14px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);border-radius:999px;font-size:12px;font-weight:800}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;font-weight:900;font-size:14px}
+.btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 10px 25px rgba(0,0,0,.18)}
+.btn-light{background:#fff;color:var(--navy)}
+.poster-card{
+  background:#fff;padding:12px;border-radius:22px;box-shadow:0 25px 70px rgba(0,0,0,.3);
+  transform:rotate(1deg)
+}
+.poster-card img{display:block;width:100%;border-radius:14px;min-height:360px;object-fit:cover;background:#edf1f5}
+.poster-note{font-size:11px;color:#687385;text-align:center;padding:8px 4px 2px}
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
-    rel="stylesheet"
-  >
+.section{padding:78px 0}
+.section.alt{background:#fff}
+.section-head{margin-bottom:34px}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:2.2px;color:var(--blue);text-transform:uppercase;margin:0 0 7px}
+h2{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,46px);line-height:1.1;margin:0;color:var(--navy)}
+.lead{color:var(--muted);max-width:760px}
 
-  <link rel="stylesheet" href="style.css">
+.fact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fact{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 28px rgba(7,29,59,.05)}
+.fact .icon{font-size:24px;color:var(--gold)}
+.fact b{display:block;margin:9px 0 3px;color:var(--navy)}
+.fact span{font-size:13px;color:var(--muted)}
 
-  <style>
-    .quiz-page {
-      min-height: 100vh;
-      padding: 60px 20px 80px;
-      background: #f7f8fa;
-      box-sizing: border-box;
-    }
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--shadow)}
+.card h3{font-family:"Playfair Display",serif;color:var(--navy);font-size:26px;margin:0 0 12px}
+.card p{color:var(--muted)}
+.checks{display:grid;gap:12px;padding:0;margin:20px 0 0;list-style:none}
+.checks li{display:flex;gap:10px;align-items:flex-start}
+.checks li:before{content:"✓";display:inline-flex;width:23px;height:23px;border-radius:50%;align-items:center;justify-content:center;background:rgba(212,175,55,.18);color:#8b6d00;font-weight:900;flex:0 0 23px}
 
-    .quiz-container {
-      width: 100%;
-      max-width: 1100px;
-      margin: auto;
-    }
+.rounds{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.round{position:relative;padding:24px 16px;background:var(--navy);color:#fff;border-radius:17px;min-height:145px}
+.round b{display:block;font-size:12px;color:var(--gold2);letter-spacing:1px;text-transform:uppercase}
+.round h3{font-family:"Playfair Display",serif;margin:9px 0 0;font-size:21px}
+.round span{display:block;color:rgba(255,255,255,.68);font-size:12px;margin-top:5px}
 
-    .quiz-heading {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.prize-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:18px}
+.prize{border-radius:20px;padding:28px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.prize.featured{background:linear-gradient(145deg,#fff8d9,#fff);border:2px solid var(--gold)}
+.prize .label{font-size:12px;font-weight:900;letter-spacing:1.5px;color:var(--blue);text-transform:uppercase}
+.prize .amount{font-family:"Playfair Display",serif;font-size:42px;color:var(--navy);font-weight:800;margin:8px 0}
+.prize p{margin:0;color:var(--muted);font-size:13px}
 
-    .quiz-heading h1 {
-      margin: 0 0 12px;
-      font-family: "Playfair Display", serif;
-      font-size: clamp(32px, 5vw, 52px);
-      color: #071d3b;
-    }
+.schedule{display:grid;gap:12px}
+.schedule-item{display:grid;grid-template-columns:190px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.schedule-item b{color:var(--navy)}
+.schedule-item span{color:var(--muted)}
 
-    .quiz-heading p {
-      margin: 0;
-      font-family: "Manrope", sans-serif;
-      color: #555;
-      font-size: 16px;
-    }
+.dignitaries{columns:3;column-gap:35px;margin:0;padding:0;list-style:none}
+.dignitaries li{break-inside:avoid;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px}
 
-    .quiz-card {
-      background: #fff;
-      border-radius: 20px;
-      padding: 25px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.10);
-      text-align: center;
-    }
+.notice{background:linear-gradient(135deg,var(--navy),#0b4d8d);color:#fff;border-radius:24px;padding:40px}
+.notice h2{color:#fff}.notice p{color:rgba(255,255,255,.78)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-item{background:#fff;border:1px solid var(--line);padding:22px;border-radius:17px}
+.contact-item small{display:block;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.contact-item a,.contact-item strong{display:block;color:var(--navy);margin-top:4px}
 
-    .quiz-poster {
-      display: block;
-      width: 100%;
-      max-width: 750px;
-      height: auto;
-      margin: 0 auto 30px;
-      border-radius: 14px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-    }
+footer{background:#06172f;color:#fff;padding:32px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+footer p{margin:0;color:rgba(255,255,255,.6);font-size:12px}
 
-    .quiz-info {
-      max-width: 750px;
-      margin: 0 auto 30px;
-      font-family: "Manrope", sans-serif;
-    }
-
-    .quiz-info h2 {
-      margin: 0 0 10px;
-      color: #071d3b;
-      font-size: 25px;
-    }
-
-    .quiz-info p {
-      margin: 8px 0;
-      color: #555;
-      line-height: 1.7;
-    }
-
-    .register-button {
-      display: inline-block;
-      padding: 15px 32px;
-      background: #071d3b;
-      color: #fff !important;
-      text-decoration: none;
-      border-radius: 50px;
-      font-family: "Manrope", sans-serif;
-      font-size: 16px;
-      font-weight: 800;
-      transition: all 0.25s ease;
-      box-shadow: 0 8px 20px rgba(7,29,59,0.25);
-    }
-
-    .register-button:hover {
-      transform: translateY(-3px);
-      background: #d4af37;
-      color: #071d3b !important;
-    }
-
-    .back-button {
-      display: inline-block;
-      margin-top: 25px;
-      color: #071d3b;
-      text-decoration: none;
-      font-family: "Manrope", sans-serif;
-      font-weight: 700;
-    }
-
-    .back-button:hover {
-      color: #b38f00;
-    }
-
-    @media (max-width: 600px) {
-      .quiz-page {
-        padding: 35px 12px 60px;
-      }
-
-      .quiz-card {
-        padding: 12px;
-        border-radius: 15px;
-      }
-
-      .quiz-poster {
-        border-radius: 10px;
-        margin-bottom: 22px;
-      }
-
-      .quiz-heading {
-        margin-bottom: 25px;
-      }
-
-      .quiz-info h2 {
-        font-size: 21px;
-      }
-
-      .register-button {
-        width: 100%;
-        box-sizing: border-box;
-      }
-    }
-  </style>
+@media(max-width:900px){
+  nav{display:none}.hero-grid,.two-col,.prize-grid,.contact-grid{grid-template-columns:1fr}
+  .fact-grid{grid-template-columns:repeat(2,1fr)}
+  .rounds{grid-template-columns:repeat(2,1fr)}
+  .dignitaries{columns:2}
+}
+@media(max-width:600px){
+  .topbar-inner{justify-content:center}.topbar-inner span:last-child{display:none}
+  .nav{min-height:66px}.brand img{width:45px;height:45px}
+  .hero{padding:55px 0}.hero-grid{gap:35px}.poster-card{transform:none}
+  .fact-grid{grid-template-columns:1fr}.rounds{grid-template-columns:1fr}
+  .dignitaries{columns:1}.schedule-item{grid-template-columns:1fr;gap:3px}
+  .section{padding:58px 0}.footer-inner{flex-direction:column;align-items:flex-start}
+}
+</style>
 </head>
 
 <body>
 
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>CLC Muttom Cherthala • Prayer • Study • Action</span>
+    <span>+91 94955 69611 • clcmuttom@gmail.com</span>
+  </div>
+</div>
 
-  <!-- QUIZ PAGE -->
-  <main class="quiz-page">
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="clc-logo.png" alt="CLC Muttom Cherthala logo">
+      <div><strong>CLC MUTTOM</strong><span>CHERTHALA</span></div>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About Quiz</a>
+      <a href="#rounds">Rounds</a>
+      <a href="#prizes">Prizes</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-register" href="YOUR_REGISTRATION_LINK_HERE" target="_blank" rel="noopener">Register</a>
+    </nav>
+  </div>
+</header>
 
-    <div class="quiz-container">
+<main>
 
-      <div class="quiz-heading">
-        <h1>33rd All Kerala Kerala Quiz 2026</h1>
-        <p>CLC Muttom Cherthala</p>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">CLC Muttom Cherthala presents</div>
+      <h1>33rd All Kerala<br><em>Kerala Quiz 2026</em></h1>
+      <p>
+        A state-level knowledge competition for High School and Higher Secondary
+        School students, continuing a Kerala Quiz tradition that began in 1993
+        in connection with Keralappiravi Day celebrations.
+      </p>
+
+      <div class="hero-meta">
+        <span class="pill">06 November 2026</span>
+        <span class="pill">St. Mary's Pastoral Centre, Cherthala</span>
+        <span class="pill">Team of 2 Students</span>
       </div>
 
-
-      <div class="quiz-card">
-
-        <!-- QUIZ POSTER -->
-        <img
-          src="kerala-quiz-33-poster.jpg"
-          alt="33rd All Kerala Kerala Quiz 2026 Poster"
-          class="quiz-poster"
-        >
-
-
-        <!-- INFORMATION -->
-        <div class="quiz-info">
-
-          <h2>33rd All Kerala Kerala Quiz 2026</h2>
-
-          <p>
-            Take part in the 33rd All Kerala Kerala Quiz and showcase
-            your knowledge about Kerala, its culture, history and heritage.
-          </p>
-
-        </div>
-
-
-        <!-- REGISTRATION BUTTON -->
-        <a
-          href="https://forms.gle/e92Lx1BqwLtii3b97"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="register-button"
-        >
-          📝 REGISTER NOW
-        </a>
-
-
-        <br>
-
-        <a href="index.html" class="back-button">
-          ← Back to CLC Muttom
-        </a>
-
+      <div class="cta-row">
+        <a class="btn btn-gold" href="YOUR_REGISTRATION_LINK_HERE" target="_blank" rel="noopener">Register Your Team →</a>
+        <a class="btn btn-light" href="#about">Explore Quiz Details</a>
       </div>
-
     </div>
 
-  </main>
+    <div class="poster-card">
+      <img src="kerala-quiz-33-poster.jpg" alt="33rd All Kerala Kerala Quiz 2026 poster">
+      <div class="poster-note">Place your official Kerala Quiz 33 poster here as <b>kerala-quiz-33-poster.jpg</b></div>
+    </div>
+  </div>
+</section>
 
+<section class="section alt">
+  <div class="container">
+    <div class="fact-grid">
+      <div class="fact"><div class="icon">📅</div><b>06 November 2026</b><span>Event date</span></div>
+      <div class="fact"><div class="icon">📍</div><b>St. Mary's Pastoral Centre</b><span>Cherthala</span></div>
+      <div class="fact"><div class="icon">👥</div><b>2 Students / Team</b><span>Representing a school</span></div>
+      <div class="fact"><div class="icon">🏆</div><b>₹15,001</b><span>First-prize cash award</span></div>
+    </div>
+  </div>
+</section>
 
-  <!-- FOOTER -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">About the event</p>
+      <h2>A tradition of knowledge, curiosity and Kerala</h2>
+      <p class="lead">
+        Kerala Quiz commenced in 1993 in connection with Keralappiravi Day
+        celebrations. The 33rd edition is designed to give High School and
+        Higher Secondary School students a platform to test and demonstrate
+        their knowledge, creativity and acumen.
+      </p>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <h3>Organised by CLC Muttom</h3>
+        <p>
+          The C.L.C. unit of St. Mary's Forane Church, Muttom, Cherthala is the
+          organiser. CLC (Christian Life Community) is an international
+          association of lay Christians following an Ignatian model of spiritual
+          life and is present in many countries.
+        </p>
+        <p>
+          Muttom CLC, a unit in the Major Archdiocese of Ernakulam–Angamaly,
+          carries out spiritual and social activities in the community.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>What the quiz covers</h3>
+        <p>The questions explore almost everything connected with Kerala, including:</p>
+        <ul class="checks">
+          <li>History and development</li>
+          <li>Current events</li>
+          <li>Cinema and media</li>
+          <li>Heritage and culture</li>
+          <li>Sports and arts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rounds" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Competition format</p>
+      <h2>From selection rounds to the grand final</h2>
+      <p class="lead">
+        The competition progresses through pre-quarter, quarter, semifinal and final stages.
+      </p>
+    </div>
+
+    <div class="rounds">
+      <div class="round"><b>01</b><h3>Pre-Quarter</h3><span>Selection stage</span></div>
+      <div class="round"><b>02</b><h3>Quarter</h3><span>Advanced stage</span></div>
+      <div class="round"><b>03</b><h3>Semifinal</h3><span>Finalists selected</span></div>
+      <div class="round"><b>04</b><h3>Grand Final</h3><span>Five featured sessions</span></div>
+      <div class="round"><b>05</b><h3>Prize Distribution</h3><span>Recognition & awards</span></div>
+    </div>
+
+    <div class="two-col" style="margin-top:28px">
+      <div class="card">
+        <h3>Final-round sessions</h3>
+        <ul class="checks">
+          <li>Direct Round</li>
+          <li>On Your Finger Tips — Buzzer Round</li>
+          <li>Connection Round</li>
+          <li>Shoot at Sight Round</li>
+          <li>Tribute to Legends</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>For the audience too</h3>
+        <p>
+          The quiz master may involve the audience during the programme,
+          helping everyone share in the excitement of the competition.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prizes" class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Recognition</p>
+      <h2>Prize structure</h2>
+      <p class="lead">The 33rd edition includes cash awards, trophies and certificates as described in the event proposal.</p>
+    </div>
+
+    <div class="prize-grid">
+      <div class="prize featured">
+        <div class="label">1st Prize</div>
+        <div class="amount">₹15,001</div>
+        <p>Cash award planned for the winner in celebration of the 33rd year.</p>
+      </div>
+      <div class="prize">
+        <div class="label">Top 8</div>
+        <div class="amount">Awards + Trophy</div>
+        <p>The first eight positions receive cash awards and a trophy.</p>
+      </div>
+      <div class="prize">
+        <div class="label">Participants</div>
+        <div class="amount">Certificate</div>
+        <p>Participants receive consolation recognition and certificates based on score; semifinalists also receive cash prizes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Programme</p>
+      <h2>Event flow</h2>
+    </div>
+
+    <div class="card">
+      <div class="schedule">
+        <div class="schedule-item"><b>Registration</b><span>Participant registration and arrangements</span></div>
+        <div class="schedule-item"><b>Inaugural Ceremony</b><span>Formal opening of the 33rd Kerala Quiz</span></div>
+        <div class="schedule-item"><b>Pre-Quarter & Quarter</b><span>Initial competition rounds</span></div>
+        <div class="schedule-item"><b>Semifinal & Final</b><span>Advanced rounds and featured final sessions</span></div>
+        <div class="schedule-item"><b>Prize Distribution</b><span>Recognition of winners and participants</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Legacy</p>
+      <h2>Dignitaries of previous years</h2>
+      <p class="lead">The proposal records the presence of distinguished personalities from public life, administration, education, literature, media and other fields over the years.</p>
+    </div>
+
+    <div class="card">
+      <ul class="dignitaries">
+        <li>Sri. A. K. Antony</li>
+        <li>Prof. P. J. Kurian</li>
+        <li>Sri. P. Thilothaman</li>
+        <li>Sri. V. M. Sudheeran</li>
+        <li>Dr. D. Babu Paul IAS</li>
+        <li>Dr. Raju Narayana Swami IAS</li>
+        <li>Dr. Lida Jacob IAS</li>
+        <li>Sri. K. Padmakumar IPS</li>
+        <li>Sri. Rishiraj Singh IPS</li>
+        <li>DIG S. Surendran IPS</li>
+        <li>Dr. Cyriac Thomas</li>
+        <li>Dr. Sheena Shukkur</li>
+        <li>Padma Bhushan Sri. Thakazhi Siva Sankara Pillai</li>
+        <li>Sri. K. L. Mohana Varma</li>
+        <li>Sri. Sippi Pallippuram</li>
+        <li>Dr. K. S. Radhakrishnan</li>
+        <li>Dr. A. Varghese</li>
+        <li>Sri. Santhosh George Kulangara</li>
+        <li>Mons. George Manikkanamparambil</li>
+        <li>Dr. D. Padmanabha Shenoi</li>
+        <li>Sri A. Alexander, IAS</li>
+        <li>Rev. Dr. Fr. Paul Poovathingal</li>
+        <li>Sri John V. Samuel, IAS</li>
+        <li>Dr. C. T. Aravindakumar</li>
+        <li>Sri Pramod Murali</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="notice">
+      <p class="eyebrow" style="color:var(--gold2)">Participant experience</p>
+      <h2>Everything needed for a dignified competition experience</h2>
+      <p>
+        The event proposal states that participants will be welcomed and provided
+        essential stationery items such as a file and pen.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://forms.gle/e92Lx1BqwLtii3b97" target="_blank" rel="noopener">Register Now →</a>
+        <a class="btn btn-light" href="index.html">Back to CLC Website</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Organiser</p>
+      <h2>CLC Muttom Cherthala</h2>
+      <p class="lead">St. Mary's Forane Church, Muttom, Cherthala, Alappuzha District, Kerala – 688 524, India.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-item">
+        <small>Phone</small>
+        <a href="tel:+919495569611">+91 94955 69611</a>
+      </div>
+      <div class="contact-item">
+        <small>Email</small>
+        <a href="mailto:clcmuttom@gmail.com">clcmuttom@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
 <footer>
-  <p>
-    © <span id="year"></span>
-    CLC Muttom Cherthala. All rights reserved.
-  </p>
+  <div class="container footer-inner">
+    <strong>CLC MUTTOM CHERTHALA</strong>
+    <p>33rd All Kerala Kerala Quiz 2026 • © 2026 CLC Muttom Cherthala</p>
+  </div>
 </footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
